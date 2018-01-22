@@ -10,8 +10,8 @@ package:
 source:
   fn: mgcv_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/mgcv_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/mgcv/mgcv_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/mgcv_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/mgcv/mgcv_{{ version }}.tar.gz
   sha256: 5a3bb235cc798f617392ef4996f2d502233998b041db2a68377f3cea94b98694
 
 
