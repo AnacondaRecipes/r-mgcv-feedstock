@@ -37,17 +37,20 @@ requirements:
     - {{native}}toolchain        # [win]
     - {{posix}}filesystem        # [win]
     - {{posix}}make
+    - llvm-openmp >=4.0.1        # [osx]
 
   host:
     - r-base
     - r-matrix
     - r-nlme >=3.1_64
+    - llvm-openmp >=4.0.1        # [osx]
 
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
     - r-matrix
     - r-nlme >=3.1_64
+    - llvm-openmp >=4.0.1        # [osx]
 
 test:
   commands:
