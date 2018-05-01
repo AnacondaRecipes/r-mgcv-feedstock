@@ -1,4 +1,4 @@
-{% set version = '1.8-22' %}
+{% set version = '1.8-23' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,18 +12,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mgcv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mgcv/mgcv_{{ version }}.tar.gz
-  sha256: 5a3bb235cc798f617392ef4996f2d502233998b041db2a68377f3cea94b98694
-
-
-  # patches:
-   # List any patch files here
-   # - fix.patch
+  sha256: 7771ac5581542904d569388e2e498d3e3b8b65f7a81737acbb45d8ef838359d3
 
 build:
   merge_build_host: True  # [win]
   # If this is a new build for the same version, increment the build number.
   number: 0
-
 
   # This is required to make R link correctly on Linux.
   rpaths:
@@ -83,7 +77,7 @@ extra:
 # The original CRAN metadata for this package was:
 
 # Package: mgcv
-# Version: 1.8-22
+# Version: 1.8-23
 # Author: Simon Wood <simon.wood@r-project.org>
 # Maintainer: Simon Wood <simon.wood@r-project.org>
 # Title: Mixed GAM Computation Vehicle with Automatic Smoothness Estimation
@@ -96,9 +90,9 @@ extra:
 # ByteCompile: yes
 # License: GPL (>= 2)
 # NeedsCompilation: yes
-# Packaged: 2017-09-18 10:38:41 UTC; sw283
+# Packaged: 2018-01-08 15:15:43 UTC; sw283
 # Repository: CRAN
-# Date/Publication: 2017-09-19 00:27:56 UTC
+# Date/Publication: 2018-01-15 00:23:36 UTC
 
 # See
 # http://docs.continuum.io/conda/build.html for
