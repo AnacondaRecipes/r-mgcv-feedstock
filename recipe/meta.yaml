@@ -45,6 +45,7 @@ requirements:
     - r-matrix
     - r-nlme >=3.1_64
     - llvm-openmp >=4.0.1        # [osx]
+    - libopenblas                # [osx]
 
 test:
   commands:
